@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CF1FF" >
+
+    <LinearLayout
+        android:id="@+id/findfriend_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/findfriend_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/addfriend_look3"
+            android:hint="请输入查找好友账号"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/findfriend_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:onClick="findfriend_search"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/findfriend_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/findfriend_linear"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false" >
+    </ListView>
+
+</RelativeLayout>
